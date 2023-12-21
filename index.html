@@ -10,6 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link href="./dist/output.css" rel="stylesheet" />
+    <script defer src="script.js"></script>
 
     <title>Chat w/ ChatGPT</title>
   </head>
@@ -24,19 +25,26 @@
           <h1 class="text-center text-xl font-medium">Olá, bem vindo(a)</h1>
         </header>
 
-        <div class="bg-bg-color h-full p-5"></div>
+        <section
+          id="messages"
+          class="bg-bg-color flex h-full flex-col gap-5 overflow-auto p-5 font-medium"
+        ></section>
 
-        <footer class="bg-main-color flex gap-5 p-5 sm:rounded-b-3xl">
+        <form class="bg-main-color flex gap-5 p-5 sm:rounded-b-3xl">
           <input
+            id="input-message"
             type="text"
             placeholder="Digite sua mensagem aqui"
             class="text-bg-color w-full rounded-lg bg-[#e1e1e1] p-2.5 outline-none"
           />
 
-          <button class="bg-bg-color rounded-lg p-2.5 sm:hover:bg-opacity-95">
+          <button
+            id="send-message"
+            class="rounded-lg bg-gray-300 p-2.5 sm:hover:bg-opacity-95"
+          >
             <i class="fa-solid fa-arrow-up"></i>
           </button>
-        </footer>
+        </form>
       </div>
     </main>
   </body>
