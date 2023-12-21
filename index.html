@@ -1,6 +1,11 @@
 <!doctype html>
 <html lang="pt-br">
   <head>
+    <script
+      src="https://kit.fontawesome.com/d35b870405.js"
+      crossorigin="anonymous"
+    ></script>
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
@@ -9,8 +14,30 @@
     <title>Chat w/ ChatGPT</title>
   </head>
   <body>
-    <main class="flex h-screen w-full items-center justify-center">
-      <h1>Hello World!</h1>
+    <main
+      class="bg-container-color flex h-screen w-full items-center justify-center text-white"
+    >
+      <div
+        class="flex h-screen w-full flex-col sm:max-h-[650px] sm:max-w-[500px]"
+      >
+        <header class="bg-main-color w-full p-5 sm:rounded-t-3xl">
+          <h1 class="text-center text-xl font-medium">Olá, bem vindo(a)</h1>
+        </header>
+
+        <div class="bg-bg-color h-full p-5"></div>
+
+        <footer class="bg-main-color flex gap-5 p-5 sm:rounded-b-3xl">
+          <input
+            type="text"
+            placeholder="Digite sua mensagem aqui"
+            class="text-bg-color w-full rounded-lg bg-[#e1e1e1] p-2.5 outline-none"
+          />
+
+          <button class="bg-bg-color rounded-lg p-2.5 sm:hover:bg-opacity-95">
+            <i class="fa-solid fa-arrow-up"></i>
+          </button>
+        </footer>
+      </div>
     </main>
   </body>
 </html>
